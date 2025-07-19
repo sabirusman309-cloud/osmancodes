@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0a192f;
+    color: #e6f1ff;
+}
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: inherit; /* Ensures background is not transparent */
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.logo span {
+    color: #64ffda;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: #e6f1ff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #64ffda;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+    background: #112240;
+    padding: 60px 0 40px 0;
+}
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+.hero-text {
+    flex: 1 1 350px;
+}
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.hero-text h2 {
+    color: #64ffda;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #bfc9d1;
+}
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+.btn {
+    background: #64ffda;
+    color: #0a192f;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+.btn:hover {
+    background: #52e0c4;
+}
+.btn-outline {
+    background: transparent;
+    color: #64ffda;
+    border: 2px solid #64ffda;
+}
+.btn-outline:hover {
+    background: #64ffda;
+    color: #0a192f;
+}
+.hero-image {
+    flex: 0 0 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #64ffda;
+    background: #fff;
+}
+section {
+    padding: 50px 0;
+}
+section h2 {
+    color: #64ffda;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.summary p {
+    font-size: 1.1rem;
+    color: #bfc9d1;
+}
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+.skills-list li {
+    background: #233554;
+    color: #64ffda;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.job {
+    margin-bottom: 30px;
+}
+.job h3 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+.job-date {
+    color: #8892b0;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    display: block;
+}
+.job ul {
+    color: #bfc9d1;
+    margin-bottom: 10px;
+}
+.edu-item h3 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+.edu-date {
+    color: #8892b0;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    display: block;
+}
+.portfolio-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.portfolio-links a {
+    color: #64ffda;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #64ffda;
+    transition: color 0.2s;
+}
+.portfolio-links a:hover {
+    color: #fff;
+}
+.cv-preview {
+    margin-top: 20px;
+    text-align: center;
+}
+.cv-preview img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.contact-list li {
+    margin-bottom: 8px;
+    color: #bfc9d1;
+    font-size: 1.1rem;
+}
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+.social-links a {
+    color: #64ffda;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+}
+.social-links a:hover {
+    color: #fff;
+}
+footer {
+    background: #091726;
+    color: #bfc9d1;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        width: 98%;
+    }
+    nav ul {
+        gap: 15px;
+    }
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    section h2 {
+        font-size: 1.4rem;
+    }
+    .cv-preview img {
+        max-width: 98vw;
+    }
+} 
