@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Usman Naeem Sabir | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Usman.</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <h1>Hello, It’s Me</h1>
+      <h2>Usman Naeem Sabir</h2>
+      <h3>And I’m a <span class="accent">UI/UX Designer & Frontend Developer</span></h3>
+      <p class="bio-summary">
+        I am a passionate UI/UX Designer using Figma and a commitment to creating impactful user experiences. My design philosophy is centered around usability and accessibility. I'm also a Frontend Web Developer focused on writing clean, efficient code and building fast, user-friendly websites.
+      </p>
+      <div class="socials">
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <a href="Usman CV-1.jpg" download class="btn-glow">Download CV</a>
+    </div>
+    <div class="hero-right">
+      <div class="hexagon-glow">
+        <img src="ozi.png" alt="Usman Naeem Sabir" class="profile-img"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-headings">
+      <h3 class="accent">UI/UX Design</h3>
+      <h3 class="coming-soon">Frontend Web Development</h3>
+    </div>
+    <div class="portfolio-content">
+      <div class="portfolio-grid">
+        <!-- Images will be injected by JS -->
+      </div>
+      <div class="coming-soon-box">
+        Coming Soon!
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Zoom Modal -->
+  <div id="zoomModal" class="zoom-modal">
+    <span class="close" id="closeModal">&times;</span>
+    <img class="zoom-modal-content" id="zoomImg" />
+    <div id="caption"></div>
+    <div id="desc" class="modal-desc"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>📞 <strong>Phone:</strong> <a href="tel:+923350293990">+92 3350293990</a></p>
+      <p>📧 <strong>Email:</strong> <a href="mailto:osmansiddiqui101@gmail.com">osmansiddiqui101@gmail.com</a></p>
+    </div>
+    <div class="contact-links">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="https://x.com/usmansid12" target="_blank" rel="noopener noreferrer">X</a></li>
+        <li><a href="https://www.linkedin.com/in/usman-naeem-sabir-605b72354" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/UsmanNaeem0" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.behance.net/usmannaeemsabir" target="_blank" rel="noopener noreferrer">Behance</a></li>
+        <li><a href="https://www.facebook.com/usman.naeemsabir?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
